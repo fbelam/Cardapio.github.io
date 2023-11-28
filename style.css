@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+Header {
+    background-color: brown;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+header img{
+    width: 10%;
+    float: left;
+    flex-direction: relative;
+
+}
+
+header nav{
+    width: 100%;
+}
+
+header ul{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item img{
+    width:  100%;
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(img/grupo-de-tres-amigos-degustando-hamburgueres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 200px;
+    text-align: center;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;    
+    justify-content: center;
+    transition-duration: 0.4s;
+    background-color: azure;
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+}
+.btn:hover
+{
+    background-color:  brown;
+    color: white;
+    
+}
+
+@media (max-width: 700px) {
+    h1{
+        color:red
+    }
+
+    .itens-cardapio{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        font-size: large;
+    }
+    
+    #menu{
+        display: none;
+    }
+}
